@@ -1,0 +1,3079 @@
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>
+			AUTORIZACIÓN Y EVALUACIÓN DE TAREAS CON PELIGRO DE CAÍDA DE MATERIAL
+		</title>
+		<style>
+			body,
+			html {
+				font-family: Arial, sans-serif;
+				margin: 0;
+				padding: 0;
+				font-size: 9px;
+			}
+			.flex {
+				display: flex;
+			}
+			.flex-center {
+				justify-content: center;
+			}
+			.flex-between {
+				justify-content: space-between;
+			}
+			.justify-start {
+				justify-content: flex-start;
+			}
+			.items-center {
+				align-items: center;
+			}
+			.text-center {
+				text-align: center;
+			}
+			.label {
+				text-transform: uppercase;
+				font-weight: bold;
+			}
+			.w-full {
+				width: 100%;
+			}
+			.m-0 {
+				margin: 0;
+			}
+			.check {
+				display: inline-block;
+				width: 15px;
+				height: 15px;
+				border-radius: 4px;
+				border: solid 1px #94a3b8;
+				background: #f1f5f9;
+			}
+			p {
+				font-size: 9px;
+			}
+			.container {
+				width: 15px;
+				height: 15px;
+				margin-right: 5px;
+				display: inline-block;
+				position: relative;
+				cursor: pointer;
+				font-size: 16px;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+			}
+			.container input {
+				position: absolute;
+				opacity: 0;
+				cursor: pointer;
+				height: 0;
+				width: 0;
+			}
+			.checkmark {
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 15px;
+				width: 15px;
+				border-radius: 4px;
+				background-color: #e2e8f0;
+				border: solid 1px #64748b;
+			}
+			.container:hover input ~ .checkmark {
+				background-color: #ccc;
+			}
+			.container input:checked ~ .checkmark {
+				background-color: #d80915;
+			}
+			.checkmark:after {
+				content: '';
+				position: absolute;
+				display: none;
+			}
+			.container input:checked ~ .checkmark:after {
+				display: block;
+			}
+			.container .checkmark:after {
+				left: 4px;
+				top: 1px;
+				width: 3px;
+				height: 8px;
+				border: solid white;
+				border-width: 0 3px 3px 0;
+				-webkit-transform: rotate(45deg);
+				-ms-transform: rotate(45deg);
+				transform: rotate(45deg);
+			}
+		</style>
+	</head>
+	<body style="padding: 0">
+		<div class="flex flex-center items-center">
+			<div
+				style="width: 15%"
+				class="text-center">
+				<img
+					src="https://info.arconstrucciones.com/file/ar/email/logo-ar-construcciones-2.png"
+					alt="logo ar"
+					style="width: 80px" />
+			</div>
+			<div style="width: 40%">
+				<h3 class="text-center">
+					AUTORIZACIÓN Y EVALUACIÓN DE TAREAS
+					<br />
+					CON PELIGRO DE CAÍDA DE MATERIAL
+				</h3>
+			</div>
+		</div>
+		<div class="w-full">
+			<p
+				class="label text-center"
+				style="margin-bottom: 0; padding-left: 12px; color: #d80915">
+				Datos de registro contratista 1
+			</p>
+		</div>
+		<div
+			class="flex flex-center items-center"
+			style="padding: 0">
+			<table
+				class="border"
+				style="width: 33.33%">
+				<tbody>
+					<tr
+						class="flex items-center justify-center"
+						style="
+							border: solid 1px #94a3b8;
+							padding: 0 8px;
+							border-radius: 8px;
+						">
+						<td style="width: 15%">
+							<p class="m-0 label">Obra:</p>
+						</td>
+						<td
+							style="
+								width: 85%;
+								border-left: solid 1px #64748b;
+								height: 16px;
+							"></td>
+					</tr>
+				</tbody>
+			</table>
+			<table
+				class="border"
+				style="width: 33.33%">
+				<tbody>
+					<tr
+						class="flex items-center justify-center"
+						style="
+							border: solid 1px #94a3b8;
+							padding: 0 8px;
+							border-radius: 8px;
+						">
+						<td style="width: 15%">
+							<p class="m-0 label">Fecha:</p>
+						</td>
+						<td
+							style="
+								width: 85%;
+								border-left: solid 1px #64748b;
+								height: 16px;
+							"></td>
+					</tr>
+				</tbody>
+			</table>
+			<table
+				class="border"
+				style="width: 33.33%">
+				<tbody>
+					<tr
+						class="flex items-center justify-center"
+						style="
+							border: solid 1px #94a3b8;
+							padding: 0 8px;
+							border-radius: 8px;
+						">
+						<td style="width: 15%">
+							<p class="m-0 label">Hora:</p>
+						</td>
+						<td
+							style="
+								width: 85%;
+								border-left: solid 1px #64748b;
+								height: 16px;
+							"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- INICIAN DATOS DEL CONTRATISTA 1 -->
+		<div style="border-radius: 8px; margin-top: 0">
+			<table class="w-full">
+				<!-- <thead>
+					<tr>
+						<td colspan="2">
+							<p
+								class="label text-center"
+								style="color: #d80915; font-size: 9px">
+								Datos del contratista 1
+							</p>
+						</td>
+					</tr>
+				</thead> -->
+				<tbody class="w-full">
+					<tr
+						class="flex items-center justify-center"
+						style="
+							border: solid 1px #94a3b8;
+							padding: 0 8px;
+							border-radius: 8px;
+							margin-bottom: 4px;
+							background: #ffffff;
+						">
+						<td style="width: 25%">
+							<p class="m-0 label">Razón social:</p>
+						</td>
+						<td
+							style="
+								width: 75%;
+								border-left: solid 1px #64748b;
+								height: 16px;
+							"></td>
+					</tr>
+					<tr
+						class="flex items-center justify-center"
+						style="
+							border: solid 1px #94a3b8;
+							padding: 0 8px;
+							border-radius: 8px;
+							margin-bottom: 0px;
+							background: #ffffff;
+						">
+						<td style="width: 25%">
+							<p class="m-0 label">DECRIPCIÓN DE LA ACTIVIDAD:</p>
+						</td>
+						<td
+							style="
+								width: 75%;
+								border-left: solid 1px #64748b;
+								height: 40px;
+							"></td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="w-full">
+				<p class="label text-center m-0">
+					¿EN QUÉ NIVEL SE DESARROLLARÁ LA ACTIVIDAD?
+				</p>
+			</div>
+			<div class="flex flex-between">
+				<div
+					style="
+						width: 49%;
+						border: solid 1px #94a3b8;
+						border-radius: 8px;
+						padding-bottom: 4px;
+						background: #ffffff;
+					">
+					<table style="width: 100%">
+						<tbody>
+							<tr
+								class="flex items-center justify-center"
+								style="
+									padding: 4px 8px;
+									border-bottom: solid 1px #64748b;
+								">
+								<td
+									style="width: 100%; padding-bottom: 0"
+									class="flex items-center">
+									<label class="container">
+										<input type="checkbox" />
+										<span class="checkmark"></span>
+									</label>
+									<p class="m-0 label">INFERIOR</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="w-full">
+						<p
+							class="label m-0"
+							style="padding: 0 10px">
+							¿EXISTE ALGUNA PROTECCIÓN QUE CUBRA A ÉL O LOS
+							TRABAJADORES?
+						</p>
+					</div>
+
+					<div class="w-full">
+						<div class="flex flex-center">
+							<table style="width: 100%">
+								<tbody>
+									<tr
+										class="flex items-center justify-start"
+										style="padding: 0 8px">
+										<td
+											style="
+												width: 20%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<label class="container">
+												<input type="checkbox" />
+												<span class="checkmark"></span>
+											</label>
+											<p class="m-0 label">SI</p>
+										</td>
+										<td
+											style="
+												width: 20%;
+												padding-bottom: 0 8px;
+											"
+											class="flex items-center">
+											<label class="container">
+												<input type="checkbox" />
+												<span class="checkmark"></span>
+											</label>
+											<p class="m-0 label">NO</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div
+							class="flex flex-center"
+							style="padding: 0 8px">
+							<table style="width: 100%">
+								<tbody>
+									<tr
+										class="flex items-center justify-center"
+										style="
+											border: solid 1px #94a3b8;
+											padding: 0 8px;
+											border-radius: 8px;
+											background: #ffffff;
+										">
+										<td style="width: 100%; height: 40px">
+											<p class="m-0 label">EXPLIQUE:</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="w-full">
+						<p
+							class="label m-0"
+							style="padding-top: 5px; padding-left: 10px">
+							MARQUE LOS CONTROLES IMPLEMENTADOS PARA ESTA
+							ACTIVIDAD
+						</p>
+					</div>
+
+					<div class="w-full">
+						<div class="flex flex-center">
+							<table
+								style="
+									width: 100%;
+									padding: 0 8px;
+									padding-bottom: 0;
+								">
+								<tbody>
+									<tr
+										class="flex items-center justify-start"
+										style="
+											border-bottom: solid 1px #64748b;
+										">
+										<td
+											style="
+												width: 10%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<label class="container">
+												<input type="checkbox" />
+												<span class="checkmark"></span>
+											</label>
+										</td>
+										<td
+											style="
+												width: 90%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<p class="m-0">Demarcación</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="flex flex-center">
+							<table
+								style="
+									width: 100%;
+									padding: 0 8px;
+									padding-bottom: 0;
+								">
+								<tbody>
+									<tr
+										class="flex items-center justify-start"
+										style="
+											border-bottom: solid 1px #64748b;
+										">
+										<td
+											style="
+												width: 10%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<label class="container">
+												<input type="checkbox" />
+												<span class="checkmark"></span>
+											</label>
+										</td>
+										<td
+											style="
+												width: 90%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<p class="m-0">
+												Señalización o avisos de
+												advertencia
+											</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="flex flex-center">
+							<table
+								style="
+									width: 100%;
+									padding: 0 8px;
+									padding-bottom: 0;
+								">
+								<tbody>
+									<tr
+										class="flex items-center justify-start"
+										style="
+											border-bottom: solid 1px #64748b;
+										">
+										<td
+											style="
+												width: 10%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<label class="container">
+												<input type="checkbox" />
+												<span class="checkmark"></span>
+											</label>
+										</td>
+										<td
+											style="
+												width: 90%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<p class="m-0">
+												Permiso de trabajo, ATS o ARO,
+												firmado por los trabajadores en
+												donde se identifica claramente
+												el peligro de caída de material
+												y se estable los controles para
+												caída de material.
+											</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="flex flex-center">
+							<table
+								style="
+									width: 100%;
+									padding: 0 8px;
+									padding-bottom: 0;
+								">
+								<tbody>
+									<tr
+										class="flex items-center justify-start"
+										style="
+											border-bottom: solid 1px #64748b;
+										">
+										<td
+											style="
+												width: 10%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<label class="container">
+												<input type="checkbox" />
+												<span class="checkmark"></span>
+											</label>
+										</td>
+										<td
+											style="
+												width: 90%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<p class="m-0">Otro:</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="flex flex-center">
+							<table
+								style="
+									width: 100%;
+									padding: 0 8px;
+									padding-bottom: 0;
+								">
+								<tbody>
+									<tr
+										class="flex items-center justify-start"
+										style="
+											border-bottom: solid 1px #64748b;
+										">
+										<td
+											style="
+												width: 10%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<label class="container">
+												<input type="checkbox" />
+												<span class="checkmark"></span>
+											</label>
+										</td>
+										<td
+											style="
+												width: 90%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<p class="m-0">
+												Ninguno. Explique:
+											</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div
+							class="flex flex-center"
+							style="padding: 0 8px; margin-top: 4px">
+							<table style="width: 100%">
+								<tbody>
+									<tr
+										class="flex items-center justify-center"
+										style="
+											border: solid 1px #94a3b8;
+											padding: 0 8px;
+											border-radius: 8px;
+											background: #ffffff;
+										">
+										<td style="width: 100%; height: 60px">
+											<p class="m-0 label">
+												REGISTRO FOTOGRAFICO - PT, ATS,
+												ARO (nivel inferior)
+											</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div
+							class="flex flex-center"
+							style="padding: 0 8px; margin-top: 4px">
+							<table style="width: 100%">
+								<tbody>
+									<tr
+										class="flex items-center justify-center"
+										style="
+											border: solid 1px #94a3b8;
+											padding: 0 8px;
+											border-radius: 8px;
+											background: #ffffff;
+										">
+										<td style="width: 100%; height: 60px">
+											<p class="m-0 label">
+												REGISTRO FOTOGRAFICO - PT, ATS,
+												ARO (nivel superior)
+											</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+
+				<!--segunda columna-->
+				<div
+					style="
+						width: 49%;
+						border: solid 1px #94a3b8;
+						border-radius: 8px;
+						padding-bottom: 4px;
+						background: #ffffff;
+					">
+					<table style="width: 100%">
+						<tbody>
+							<tr
+								class="flex items-center justify-center"
+								style="
+									padding: 4px 8px;
+									border-bottom: solid 1px #64748b;
+								">
+								<td
+									style="width: 100%; padding-bottom: 0"
+									class="flex items-center">
+									<label class="container">
+										<input type="checkbox" />
+										<span class="checkmark"></span>
+									</label>
+									<p class="m-0 label">SUPERIOR</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="w-full">
+						<p
+							class="label m-0"
+							style="padding: 0 10px">
+							MARQUE LA PROTECCIÓN PARA EVITAR QUE MATERIALES O
+							ELEMENTOS CAIGAN AL NIVEL INFERIOR:
+						</p>
+					</div>
+
+					<div class="w-full">
+						<div class="flex flex-center">
+							<table
+								style="
+									width: 100%;
+									padding: 0 8px;
+									padding-bottom: 0;
+								">
+								<tbody>
+									<tr
+										class="flex items-center justify-start"
+										style="
+											border-bottom: solid 1px #64748b;
+										">
+										<td
+											style="
+												width: 10%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<label class="container">
+												<input type="checkbox" />
+												<span class="checkmark"></span>
+											</label>
+										</td>
+										<td
+											style="
+												width: 90%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<p class="m-0">Mampara o redes</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="flex flex-center">
+							<table
+								style="
+									width: 100%;
+									padding: 0 8px;
+									padding-bottom: 0;
+								">
+								<tbody>
+									<tr
+										class="flex items-center justify-start"
+										style="
+											border-bottom: solid 1px #64748b;
+										">
+										<td
+											style="
+												width: 10%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<label class="container">
+												<input type="checkbox" />
+												<span class="checkmark"></span>
+											</label>
+										</td>
+										<td
+											style="
+												width: 90%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<p class="m-0">
+												Protecciones verticales
+											</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="flex flex-center">
+							<table
+								style="
+									width: 100%;
+									padding: 0 8px;
+									padding-bottom: 0;
+								">
+								<tbody>
+									<tr
+										class="flex items-center justify-start"
+										style="
+											border-bottom: solid 1px #64748b;
+										">
+										<td
+											style="
+												width: 10%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<label class="container">
+												<input type="checkbox" />
+												<span class="checkmark"></span>
+											</label>
+										</td>
+										<td
+											style="
+												width: 90%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<p class="m-0">
+												Sistemas anticaídas de objetos o
+												dispositivos de retención de
+												herramientas.
+											</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="w-full">
+							<p
+								class="label m-0"
+								style="padding-top: 0px; padding-left: 14px">
+								¿Cuáles?
+							</p>
+						</div>
+
+						<div class="flex flex-center">
+							<table
+								style="
+									width: 100%;
+									padding: 0 8px;
+									padding-bottom: 0;
+								">
+								<tbody>
+									<tr
+										class="flex items-center justify-start"
+										style="
+											border-bottom: solid 1px #64748b;
+										">
+										<td
+											style="
+												width: 10%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<label class="container">
+												<input type="checkbox" />
+												<span class="checkmark"></span>
+											</label>
+										</td>
+										<td
+											style="
+												width: 90%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<p class="m-0">
+												Cinturón de herramientas
+											</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="flex flex-center">
+							<table
+								style="
+									width: 100%;
+									padding: 0 8px;
+									padding-bottom: 0;
+								">
+								<tbody>
+									<tr
+										class="flex items-center justify-start"
+										style="
+											border-bottom: solid 1px #64748b;
+										">
+										<td
+											style="
+												width: 10%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<label class="container">
+												<input type="checkbox" />
+												<span class="checkmark"></span>
+											</label>
+										</td>
+										<td
+											style="
+												width: 90%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<p class="m-0">
+												Bolsas de herramientas con
+												sujeción
+											</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="flex flex-center">
+							<table
+								style="
+									width: 100%;
+									padding: 0 8px;
+									padding-bottom: 0;
+								">
+								<tbody>
+									<tr
+										class="flex items-center justify-start"
+										style="
+											border-bottom: solid 1px #64748b;
+										">
+										<td
+											style="
+												width: 10%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<label class="container">
+												<input type="checkbox" />
+												<span class="checkmark"></span>
+											</label>
+										</td>
+										<td
+											style="
+												width: 90%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<p class="m-0">
+												Cintas de seguridad para
+												herramientas
+											</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="flex flex-center">
+							<table
+								style="
+									width: 100%;
+									padding: 0 8px;
+									padding-bottom: 0;
+								">
+								<tbody>
+									<tr
+										class="flex items-center justify-start"
+										style="
+											border-bottom: solid 1px #64748b;
+										">
+										<td
+											style="
+												width: 10%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<label class="container">
+												<input type="checkbox" />
+												<span class="checkmark"></span>
+											</label>
+										</td>
+										<td
+											style="
+												width: 90%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<p class="m-0">Mosquetones</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="flex flex-center">
+							<table
+								style="
+									width: 100%;
+									padding: 0 8px;
+									padding-bottom: 0;
+								">
+								<tbody>
+									<tr
+										class="flex items-center justify-start"
+										style="
+											border-bottom: solid 1px #64748b;
+										">
+										<td
+											style="
+												width: 10%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<label class="container">
+												<input type="checkbox" />
+												<span class="checkmark"></span>
+											</label>
+										</td>
+										<td
+											style="
+												width: 90%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<p class="m-0">
+												Correas retráctiles
+											</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="flex flex-center">
+							<table
+								style="
+									width: 100%;
+									padding: 0 8px;
+									padding-bottom: 0;
+								">
+								<tbody>
+									<tr
+										class="flex items-center justify-start"
+										style="
+											border-bottom: solid 1px #64748b;
+										">
+										<td
+											style="
+												width: 10%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<label class="container">
+												<input type="checkbox" />
+												<span class="checkmark"></span>
+											</label>
+										</td>
+										<td
+											style="
+												width: 90%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<p class="m-0">
+												Sistemas de amarre de
+												herramientas
+											</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="flex flex-center">
+							<table
+								style="
+									width: 100%;
+									padding: 0 8px;
+									padding-bottom: 0;
+								">
+								<tbody>
+									<tr
+										class="flex items-center justify-start"
+										style="
+											border-bottom: solid 1px #64748b;
+										">
+										<td
+											style="
+												width: 10%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<label class="container">
+												<input type="checkbox" />
+												<span class="checkmark"></span>
+											</label>
+										</td>
+										<td
+											style="
+												width: 90%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<p class="m-0">Otro:</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="flex flex-center">
+							<table
+								style="
+									width: 100%;
+									padding: 0 8px;
+									padding-bottom: 0;
+								">
+								<tbody>
+									<tr
+										class="flex items-center justify-start"
+										style="
+											border-bottom: solid 1px #64748b;
+										">
+										<td
+											style="
+												width: 10%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<label class="container">
+												<input type="checkbox" />
+												<span class="checkmark"></span>
+											</label>
+										</td>
+										<td
+											style="
+												width: 90%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<p class="m-0">
+												Ninguno. Explique:
+											</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div
+							class="flex flex-center"
+							style="padding: 0 8px; margin: 4px 0">
+							<table style="width: 100%">
+								<tbody>
+									<tr
+										class="flex items-center justify-center"
+										style="
+											border: solid 1px #94a3b8;
+											padding: 0px 8px;
+											border-radius: 8px;
+											background: #ffffff;
+										">
+										<td
+											style="
+												width: 100%;
+												height: 60px;
+												background: #ffffff;
+											">
+											<p class="m-0 label">
+												REGISTRO FOTOGRAFICO DEL
+												LUGAR/ACTIVIDAD Y LOS CONTROLES
+												IMPLEMENTADOS
+											</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="w-full">
+							<p
+								class="label m-0"
+								style="padding-top: 0; padding-left: 16px">
+								MARQUE LOS CONTROLES IMPLEMENTADOS EN EL NIVEL
+								INFERIOR
+							</p>
+						</div>
+
+						<div class="flex flex-center">
+							<table
+								style="
+									width: 100%;
+									padding: 0 8px;
+									padding-bottom: 0;
+								">
+								<tbody>
+									<tr
+										class="flex items-center justify-start"
+										style="
+											border-bottom: solid 1px #64748b;
+										">
+										<td
+											style="
+												width: 10%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<label class="container">
+												<input type="checkbox" />
+												<span class="checkmark"></span>
+											</label>
+										</td>
+										<td
+											style="
+												width: 90%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<p class="m-0">Demarcación</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="flex flex-center">
+							<table
+								style="
+									width: 100%;
+									padding: 0 8px;
+									padding-bottom: 0;
+								">
+								<tbody>
+									<tr
+										class="flex items-center justify-start"
+										style="
+											border-bottom: solid 1px #64748b;
+										">
+										<td
+											style="
+												width: 10%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<label class="container">
+												<input type="checkbox" />
+												<span class="checkmark"></span>
+											</label>
+										</td>
+										<td
+											style="
+												width: 90%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<p class="m-0">
+												Señalización o avisos de
+												advertencia
+											</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="flex flex-center">
+							<table
+								style="
+									width: 100%;
+									padding: 0 8px;
+									padding-bottom: 0;
+								">
+								<tbody>
+									<tr class="flex items-center justify-start">
+										<td
+											style="
+												width: 10%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<label class="container">
+												<input type="checkbox" />
+												<span class="checkmark"></span>
+											</label>
+										</td>
+										<td
+											style="
+												width: 90%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<p class="m-0">
+												Permiso de trabajo, ATS o ARO,
+												firmado por los trabajadores en
+												donde se identifica claramente
+												el peligro de caída de material
+												y se estable los controles para
+												caída de material.
+											</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<table style="width: 100%">
+				<thead>
+					<tr>
+						<td>
+							<p
+								class="label m-0"
+								style="color: #d80915; padding: 0px 8px">
+								Contratista 1
+							</p>
+						</td>
+					</tr>
+				</thead>
+			</table>
+
+			<div class="flex flex-between">
+				<table style="width: 49%">
+					<tbody class="w-full">
+						<tr
+							class="flex items-center justify-center"
+							style="
+								border: solid 1px #94a3b8;
+								padding: 0 8px;
+								border-radius: 8px;
+								margin-bottom: 4px;
+								background: #ffffff;
+							">
+							<td style="width: 20%">
+								<p class="m-0 label">NOMBRE DEL ENCARGADO</p>
+							</td>
+							<td
+								style="
+									width: 80%;
+									border-left: solid 1px #64748b;
+									height: 16px;
+								"></td>
+						</tr>
+						<tr
+							class="flex items-center justify-center"
+							style="
+								border: solid 1px #94a3b8;
+								padding: 0 8px;
+								border-radius: 8px;
+								margin-bottom: 4px;
+								background: #ffffff;
+							">
+							<td style="width: 20%">
+								<p class="m-0 label">CORREO ENCARGADO</p>
+							</td>
+							<td
+								style="
+									width: 80%;
+									border-left: solid 1px #64748b;
+									height: 16px;
+								"></td>
+						</tr>
+						<tr
+							class="flex items-center justify-center"
+							style="
+								border: solid 1px #94a3b8;
+								padding: 0 8px;
+								border-radius: 8px;
+								margin-bottom: 4px;
+								background: #ffffff;
+							">
+							<td style="width: 20%">
+								<p class="m-0 label">FIRMA</p>
+							</td>
+							<td
+								style="
+									width: 80%;
+									border-left: solid 1px #64748b;
+									height: 16px;
+								"></td>
+						</tr>
+					</tbody>
+				</table>
+				<table style="width: 49%">
+					<tbody class="w-full">
+						<tr
+							class="flex items-center justify-center"
+							style="
+								border: solid 1px #94a3b8;
+								padding: 0 8px;
+								border-radius: 8px;
+								margin-bottom: 4px;
+								background: #ffffff;
+							">
+							<td style="width: 20%">
+								<p class="m-0 label">INSPECTOR SST</p>
+							</td>
+							<td
+								style="
+									width: 80%;
+									border-left: solid 1px #64748b;
+									height: 16px;
+								"></td>
+						</tr>
+						<tr
+							class="flex items-center justify-center"
+							style="
+								border: solid 1px #94a3b8;
+								padding: 0 8px;
+								border-radius: 8px;
+								margin-bottom: 4px;
+								background: #ffffff;
+							">
+							<td style="width: 20%">
+								<p class="m-0 label">CORREO SST CONTRATISTA</p>
+							</td>
+							<td
+								style="
+									width: 80%;
+									border-left: solid 1px #64748b;
+									height: 16px;
+								"></td>
+						</tr>
+						<tr
+							class="flex items-center justify-center"
+							style="
+								border: solid 1px #94a3b8;
+								padding: 0 8px;
+								border-radius: 8px;
+								margin-bottom: 4px;
+								background: #ffffff;
+							">
+							<td style="width: 20%">
+								<p class="m-0 label">FIRMA</p>
+							</td>
+							<td
+								style="
+									width: 80%;
+									border-left: solid 1px #64748b;
+									height: 16px;
+								"></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="flex flex-between">
+				<div
+					style="
+						width: 100%;
+						border-radius: 8px;
+						padding: 0 8px;
+						margin-top: 12px;
+					">
+					<table style="width: 100%">
+						<tbody>
+							<tr>
+								<td class="flex items-center justify-start">
+									<p
+										class="label m-0"
+										style="padding-right: 12px">
+										Requiere incluir un segundo contratista
+										para la actividad
+									</p>
+									<div
+										class="flex items-center justify-start"
+										style="padding-right: 16px">
+										<label class="container">
+											<input type="checkbox" />
+											<span class="checkmark"></span>
+										</label>
+										<p class="label m-0">SI</p>
+									</div>
+									<div
+										class="flex items-center justify-start">
+										<label class="container">
+											<input type="checkbox" />
+											<span class="checkmark"></span>
+										</label>
+										<p class="label m-0">NO</p>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<!-- INICIAN DATOS DEL CONTRATISTA 2 -->
+		<div
+			class="w-full"
+			style="margin-top: 150px">
+			<p
+				class="label text-center"
+				style="margin-bottom: 0; padding-left: 12px; color: #d80915">
+				Datos de registro contratista 2
+			</p>
+		</div>
+		<div
+			class="flex flex-center items-center"
+			style="padding: 0">
+			<table
+				class="border"
+				style="width: 33.33%">
+				<tbody>
+					<tr
+						class="flex items-center justify-center"
+						style="
+							border: solid 1px #94a3b8;
+							padding: 0 8px;
+							border-radius: 8px;
+						">
+						<td style="width: 15%">
+							<p class="m-0 label">Obra:</p>
+						</td>
+						<td
+							style="
+								width: 85%;
+								border-left: solid 1px #64748b;
+								height: 16px;
+							"></td>
+					</tr>
+				</tbody>
+			</table>
+			<table
+				class="border"
+				style="width: 33.33%">
+				<tbody>
+					<tr
+						class="flex items-center justify-center"
+						style="
+							border: solid 1px #94a3b8;
+							padding: 0 8px;
+							border-radius: 8px;
+						">
+						<td style="width: 15%">
+							<p class="m-0 label">Fecha:</p>
+						</td>
+						<td
+							style="
+								width: 85%;
+								border-left: solid 1px #64748b;
+								height: 16px;
+							"></td>
+					</tr>
+				</tbody>
+			</table>
+			<table
+				class="border"
+				style="width: 33.33%">
+				<tbody>
+					<tr
+						class="flex items-center justify-center"
+						style="
+							border: solid 1px #94a3b8;
+							padding: 0 8px;
+							border-radius: 8px;
+						">
+						<td style="width: 15%">
+							<p class="m-0 label">Hora:</p>
+						</td>
+						<td
+							style="
+								width: 85%;
+								border-left: solid 1px #64748b;
+								height: 16px;
+							"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div style="border-radius: 8px">
+			<table class="w-full">
+				<!-- <thead>
+					<tr>
+						<td colspan="2">
+							<p
+								class="label text-center"
+								style="color: #d80915; font-size: 9px">
+								Datos del contratista 2
+							</p>
+						</td>
+					</tr>
+				</thead> -->
+				<tbody class="w-full">
+					<tr
+						class="flex items-center justify-center"
+						style="
+							border: solid 1px #94a3b8;
+							padding: 0 8px;
+							border-radius: 8px;
+							margin-bottom: 4px;
+							background: #ffffff;
+						">
+						<td style="width: 25%">
+							<p class="m-0 label">Razón social:</p>
+						</td>
+						<td
+							style="
+								width: 75%;
+								border-left: solid 1px #64748b;
+								height: 16px;
+							"></td>
+					</tr>
+					<tr
+						class="flex items-center justify-center"
+						style="
+							border: solid 1px #94a3b8;
+							padding: 0 8px;
+							border-radius: 8px;
+							margin-bottom: 0px;
+							background: #ffffff;
+						">
+						<td style="width: 25%">
+							<p class="m-0 label">DECRIPCIÓN DE LA ACTIVIDAD:</p>
+						</td>
+						<td
+							style="
+								width: 75%;
+								border-left: solid 1px #64748b;
+								height: 40px;
+							"></td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="w-full">
+				<p class="label text-center m-0">
+					¿EN QUÉ NIVEL SE DESARROLLARÁ LA ACTIVIDAD?
+				</p>
+			</div>
+			<div class="flex flex-between">
+				<div
+					style="
+						width: 49%;
+						border: solid 1px #94a3b8;
+						border-radius: 8px;
+						padding-bottom: 4px;
+						background: #ffffff;
+					">
+					<table style="width: 100%">
+						<tbody>
+							<tr
+								class="flex items-center justify-center"
+								style="
+									padding: 4 8px;
+									border-bottom: solid 1px #64748b;
+								">
+								<td
+									style="width: 100%; padding-bottom: 0"
+									class="flex items-center">
+									<label class="container">
+										<input type="checkbox" />
+										<span class="checkmark"></span>
+									</label>
+									<p class="m-0 label">INFERIOR</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="w-full">
+						<p
+							class="label m-0"
+							style="padding: 0 10px">
+							¿EXISTE ALGUNA PROTECCIÓN QUE CUBRA A ÉL O LOS
+							TRABAJADORES?
+						</p>
+					</div>
+
+					<div class="w-full">
+						<div class="flex flex-center">
+							<table style="width: 100%">
+								<tbody>
+									<tr
+										class="flex items-center justify-start"
+										style="padding: 0 8px">
+										<td
+											style="
+												width: 20%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<label class="container">
+												<input type="checkbox" />
+												<span class="checkmark"></span>
+											</label>
+											<p class="m-0 label">SI</p>
+										</td>
+										<td
+											style="
+												width: 20%;
+												padding-bottom: 0 8px;
+											"
+											class="flex items-center">
+											<label class="container">
+												<input type="checkbox" />
+												<span class="checkmark"></span>
+											</label>
+											<p class="m-0 label">NO</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div
+							class="flex flex-center"
+							style="padding: 0 8px">
+							<table style="width: 100%">
+								<tbody>
+									<tr
+										class="flex items-center justify-center"
+										style="
+											border: solid 1px #94a3b8;
+											padding: 0 8px;
+											border-radius: 8px;
+											background: #ffffff;
+										">
+										<td style="width: 100%; height: 40px">
+											<p class="m-0 label">EXPLIQUE:</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="w-full">
+						<p
+							class="label m-0"
+							style="padding-top: 5px; padding-left: 10px">
+							MARQUE LOS CONTROLES IMPLEMENTADOS PARA ESTA
+							ACTIVIDAD
+						</p>
+					</div>
+
+					<div class="w-full">
+						<div class="flex flex-center">
+							<table
+								style="
+									width: 100%;
+									padding: 0 8px;
+									padding-bottom: 0;
+								">
+								<tbody>
+									<tr
+										class="flex items-center justify-start"
+										style="
+											border-bottom: solid 1px #64748b;
+										">
+										<td
+											style="
+												width: 10%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<label class="container">
+												<input type="checkbox" />
+												<span class="checkmark"></span>
+											</label>
+										</td>
+										<td
+											style="
+												width: 90%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<p class="m-0">Demarcación</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="flex flex-center">
+							<table
+								style="
+									width: 100%;
+									padding: 0 8px;
+									padding-bottom: 0;
+								">
+								<tbody>
+									<tr
+										class="flex items-center justify-start"
+										style="
+											border-bottom: solid 1px #64748b;
+										">
+										<td
+											style="
+												width: 10%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<label class="container">
+												<input type="checkbox" />
+												<span class="checkmark"></span>
+											</label>
+										</td>
+										<td
+											style="
+												width: 90%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<p class="m-0">
+												Señalización o avisos de
+												advertencia
+											</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="flex flex-center">
+							<table
+								style="
+									width: 100%;
+									padding: 0 8px;
+									padding-bottom: 0;
+								">
+								<tbody>
+									<tr
+										class="flex items-center justify-start"
+										style="
+											border-bottom: solid 1px #64748b;
+										">
+										<td
+											style="
+												width: 10%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<label class="container">
+												<input type="checkbox" />
+												<span class="checkmark"></span>
+											</label>
+										</td>
+										<td
+											style="
+												width: 90%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<p class="m-0">
+												Permiso de trabajo, ATS o ARO,
+												firmado por los trabajadores en
+												donde se identifica claramente
+												el peligro de caída de material
+												y se estable los controles para
+												caída de material.
+											</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="flex flex-center">
+							<table
+								style="
+									width: 100%;
+									padding: 0 8px;
+									padding-bottom: 0;
+								">
+								<tbody>
+									<tr
+										class="flex items-center justify-start"
+										style="
+											border-bottom: solid 1px #64748b;
+										">
+										<td
+											style="
+												width: 10%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<label class="container">
+												<input type="checkbox" />
+												<span class="checkmark"></span>
+											</label>
+										</td>
+										<td
+											style="
+												width: 90%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<p class="m-0">Otro:</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="flex flex-center">
+							<table
+								style="
+									width: 100%;
+									padding: 0 8px;
+									padding-bottom: 0;
+								">
+								<tbody>
+									<tr
+										class="flex items-center justify-start"
+										style="
+											border-bottom: solid 1px #64748b;
+										">
+										<td
+											style="
+												width: 10%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<label class="container">
+												<input type="checkbox" />
+												<span class="checkmark"></span>
+											</label>
+										</td>
+										<td
+											style="
+												width: 90%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<p class="m-0">
+												Ninguno. Explique:
+											</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div
+							class="flex flex-center"
+							style="padding: 0 8px; margin-top: 4px">
+							<table style="width: 100%">
+								<tbody>
+									<tr
+										class="flex items-center justify-center"
+										style="
+											border: solid 1px #94a3b8;
+											padding: 0 8px;
+											border-radius: 8px;
+											background: #ffffff;
+										">
+										<td style="width: 100%; height: 60px">
+											<p class="m-0 label">
+												REGISTRO FOTOGRAFICO - PT, ATS,
+												ARO (nivel inferior)
+											</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div
+							class="flex flex-center"
+							style="padding: 0 8px; margin-top: 4px">
+							<table style="width: 100%">
+								<tbody>
+									<tr
+										class="flex items-center justify-center"
+										style="
+											border: solid 1px #94a3b8;
+											padding: 0 8px;
+											border-radius: 8px;
+											background: #ffffff;
+										">
+										<td style="width: 100%; height: 60px">
+											<p class="m-0 label">
+												REGISTRO FOTOGRAFICO - PT, ATS,
+												ARO (nivel superior)
+											</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+
+				<!--segunda columna-->
+				<div
+					style="
+						width: 49%;
+						border: solid 1px #94a3b8;
+						border-radius: 8px;
+						padding-bottom: 4px;
+						background: #ffffff;
+					">
+					<table style="width: 100%">
+						<tbody>
+							<tr
+								class="flex items-center justify-center"
+								style="
+									padding: 4px 8px;
+									border-bottom: solid 1px #64748b;
+								">
+								<td
+									style="width: 100%; padding-bottom: 0"
+									class="flex items-center">
+									<label class="container">
+										<input type="checkbox" />
+										<span class="checkmark"></span>
+									</label>
+									<p class="m-0 label">SUPERIOR</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="w-full">
+						<p
+							class="label m-0"
+							style="padding: 0 10px">
+							MARQUE LA PROTECCIÓN PARA EVITAR QUE MATERIALES O
+							ELEMENTOS CAIGAN AL NIVEL INFERIOR:
+						</p>
+					</div>
+
+					<div class="w-full">
+						<div class="flex flex-center">
+							<table
+								style="
+									width: 100%;
+									padding: 0 8px;
+									padding-bottom: 0;
+								">
+								<tbody>
+									<tr
+										class="flex items-center justify-start"
+										style="
+											border-bottom: solid 1px #64748b;
+										">
+										<td
+											style="
+												width: 10%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<label class="container">
+												<input type="checkbox" />
+												<span class="checkmark"></span>
+											</label>
+										</td>
+										<td
+											style="
+												width: 90%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<p class="m-0">Mampara o redes</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="flex flex-center">
+							<table
+								style="
+									width: 100%;
+									padding: 0 8px;
+									padding-bottom: 0;
+								">
+								<tbody>
+									<tr
+										class="flex items-center justify-start"
+										style="
+											border-bottom: solid 1px #64748b;
+										">
+										<td
+											style="
+												width: 10%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<label class="container">
+												<input type="checkbox" />
+												<span class="checkmark"></span>
+											</label>
+										</td>
+										<td
+											style="
+												width: 90%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<p class="m-0">
+												Protecciones verticales
+											</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="flex flex-center">
+							<table
+								style="
+									width: 100%;
+									padding: 0 8px;
+									padding-bottom: 0;
+								">
+								<tbody>
+									<tr
+										class="flex items-center justify-start"
+										style="
+											border-bottom: solid 1px #64748b;
+										">
+										<td
+											style="
+												width: 10%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<label class="container">
+												<input type="checkbox" />
+												<span class="checkmark"></span>
+											</label>
+										</td>
+										<td
+											style="
+												width: 90%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<p class="m-0">
+												Sistemas anticaídas de objetos o
+												dispositivos de retención de
+												herramientas.
+											</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="w-full">
+							<p
+								class="label m-0"
+								style="padding-top: 0px; padding-left: 14px">
+								¿Cuáles?
+							</p>
+						</div>
+
+						<div class="flex flex-center">
+							<table
+								style="
+									width: 100%;
+									padding: 0 8px;
+									padding-bottom: 0;
+								">
+								<tbody>
+									<tr
+										class="flex items-center justify-start"
+										style="
+											border-bottom: solid 1px #64748b;
+										">
+										<td
+											style="
+												width: 10%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<label class="container">
+												<input type="checkbox" />
+												<span class="checkmark"></span>
+											</label>
+										</td>
+										<td
+											style="
+												width: 90%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<p class="m-0">
+												Cinturón de herramientas
+											</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="flex flex-center">
+							<table
+								style="
+									width: 100%;
+									padding: 0 8px;
+									padding-bottom: 0;
+								">
+								<tbody>
+									<tr
+										class="flex items-center justify-start"
+										style="
+											border-bottom: solid 1px #64748b;
+										">
+										<td
+											style="
+												width: 10%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<label class="container">
+												<input type="checkbox" />
+												<span class="checkmark"></span>
+											</label>
+										</td>
+										<td
+											style="
+												width: 90%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<p class="m-0">
+												Bolsas de herramientas con
+												sujeción
+											</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="flex flex-center">
+							<table
+								style="
+									width: 100%;
+									padding: 0 8px;
+									padding-bottom: 0;
+								">
+								<tbody>
+									<tr
+										class="flex items-center justify-start"
+										style="
+											border-bottom: solid 1px #64748b;
+										">
+										<td
+											style="
+												width: 10%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<label class="container">
+												<input type="checkbox" />
+												<span class="checkmark"></span>
+											</label>
+										</td>
+										<td
+											style="
+												width: 90%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<p class="m-0">
+												Cintas de seguridad para
+												herramientas
+											</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="flex flex-center">
+							<table
+								style="
+									width: 100%;
+									padding: 0 8px;
+									padding-bottom: 0;
+								">
+								<tbody>
+									<tr
+										class="flex items-center justify-start"
+										style="
+											border-bottom: solid 1px #64748b;
+										">
+										<td
+											style="
+												width: 10%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<label class="container">
+												<input type="checkbox" />
+												<span class="checkmark"></span>
+											</label>
+										</td>
+										<td
+											style="
+												width: 90%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<p class="m-0">Mosquetones</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="flex flex-center">
+							<table
+								style="
+									width: 100%;
+									padding: 0 8px;
+									padding-bottom: 0;
+								">
+								<tbody>
+									<tr
+										class="flex items-center justify-start"
+										style="
+											border-bottom: solid 1px #64748b;
+										">
+										<td
+											style="
+												width: 10%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<label class="container">
+												<input type="checkbox" />
+												<span class="checkmark"></span>
+											</label>
+										</td>
+										<td
+											style="
+												width: 90%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<p class="m-0">
+												Correas retráctiles
+											</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="flex flex-center">
+							<table
+								style="
+									width: 100%;
+									padding: 0 8px;
+									padding-bottom: 0;
+								">
+								<tbody>
+									<tr
+										class="flex items-center justify-start"
+										style="
+											border-bottom: solid 1px #64748b;
+										">
+										<td
+											style="
+												width: 10%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<label class="container">
+												<input type="checkbox" />
+												<span class="checkmark"></span>
+											</label>
+										</td>
+										<td
+											style="
+												width: 90%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<p class="m-0">
+												Sistemas de amarre de
+												herramientas
+											</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="flex flex-center">
+							<table
+								style="
+									width: 100%;
+									padding: 0 8px;
+									padding-bottom: 0;
+								">
+								<tbody>
+									<tr
+										class="flex items-center justify-start"
+										style="
+											border-bottom: solid 1px #64748b;
+										">
+										<td
+											style="
+												width: 10%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<label class="container">
+												<input type="checkbox" />
+												<span class="checkmark"></span>
+											</label>
+										</td>
+										<td
+											style="
+												width: 90%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<p class="m-0">Otro:</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="flex flex-center">
+							<table
+								style="
+									width: 100%;
+									padding: 0 8px;
+									padding-bottom: 0;
+								">
+								<tbody>
+									<tr
+										class="flex items-center justify-start"
+										style="
+											border-bottom: solid 1px #64748b;
+										">
+										<td
+											style="
+												width: 10%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<label class="container">
+												<input type="checkbox" />
+												<span class="checkmark"></span>
+											</label>
+										</td>
+										<td
+											style="
+												width: 90%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<p class="m-0">
+												Ninguno. Explique:
+											</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div
+							class="flex flex-center"
+							style="padding: 0 8px; margin: 4px 0">
+							<table style="width: 100%">
+								<tbody>
+									<tr
+										class="flex items-center justify-center"
+										style="
+											border: solid 1px #94a3b8;
+											padding: 0px 8px;
+											border-radius: 8px;
+											background: #ffffff;
+										">
+										<td
+											style="
+												width: 100%;
+												height: 60px;
+												background: #ffffff;
+											">
+											<p class="m-0 label">
+												REGISTRO FOTOGRAFICO DEL
+												LUGAR/ACTIVIDAD Y LOS CONTROLES
+												IMPLEMENTADOS
+											</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="w-full">
+							<p
+								class="label m-0"
+								style="padding-top: 0; padding-left: 16px">
+								MARQUE LOS CONTROLES IMPLEMENTADOS EN EL NIVEL
+								INFERIOR
+							</p>
+						</div>
+
+						<div class="flex flex-center">
+							<table
+								style="
+									width: 100%;
+									padding: 0 8px;
+									padding-bottom: 0;
+								">
+								<tbody>
+									<tr
+										class="flex items-center justify-start"
+										style="
+											border-bottom: solid 1px #64748b;
+										">
+										<td
+											style="
+												width: 10%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<label class="container">
+												<input type="checkbox" />
+												<span class="checkmark"></span>
+											</label>
+										</td>
+										<td
+											style="
+												width: 90%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<p class="m-0">Demarcación</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="flex flex-center">
+							<table
+								style="
+									width: 100%;
+									padding: 0 8px;
+									padding-bottom: 0;
+								">
+								<tbody>
+									<tr
+										class="flex items-center justify-start"
+										style="
+											border-bottom: solid 1px #64748b;
+										">
+										<td
+											style="
+												width: 10%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<label class="container">
+												<input type="checkbox" />
+												<span class="checkmark"></span>
+											</label>
+										</td>
+										<td
+											style="
+												width: 90%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<p class="m-0">
+												Señalización o avisos de
+												advertencia
+											</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="flex flex-center">
+							<table
+								style="
+									width: 100%;
+									padding: 0 8px;
+									padding-bottom: 0;
+								">
+								<tbody>
+									<tr class="flex items-center justify-start">
+										<td
+											style="
+												width: 10%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<label class="container">
+												<input type="checkbox" />
+												<span class="checkmark"></span>
+											</label>
+										</td>
+										<td
+											style="
+												width: 90%;
+												padding-bottom: 4px;
+											"
+											class="flex items-center">
+											<p class="m-0">
+												Permiso de trabajo, ATS o ARO,
+												firmado por los trabajadores en
+												donde se identifica claramente
+												el peligro de caída de material
+												y se estable los controles para
+												caída de material.
+											</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<table style="width: 100%">
+				<thead>
+					<tr>
+						<td>
+							<p
+								class="label m-0"
+								style="color: #d80915; padding: 0px 8px">
+								Contratista 2
+							</p>
+						</td>
+					</tr>
+				</thead>
+			</table>
+
+			<div class="flex flex-between">
+				<table style="width: 49%">
+					<tbody class="w-full">
+						<tr
+							class="flex items-center justify-center"
+							style="
+								border: solid 1px #94a3b8;
+								padding: 0 8px;
+								border-radius: 8px;
+								margin-bottom: 4px;
+								background: #ffffff;
+							">
+							<td style="width: 20%">
+								<p class="m-0 label">NOMBRE DEL ENCARGADO</p>
+							</td>
+							<td
+								style="
+									width: 80%;
+									border-left: solid 1px #64748b;
+									height: 16px;
+								"></td>
+						</tr>
+						<tr
+							class="flex items-center justify-center"
+							style="
+								border: solid 1px #94a3b8;
+								padding: 0 8px;
+								border-radius: 8px;
+								margin-bottom: 4px;
+								background: #ffffff;
+							">
+							<td style="width: 20%">
+								<p class="m-0 label">CORREO ENCARGADO</p>
+							</td>
+							<td
+								style="
+									width: 80%;
+									border-left: solid 1px #64748b;
+									height: 16px;
+								"></td>
+						</tr>
+						<tr
+							class="flex items-center justify-center"
+							style="
+								border: solid 1px #94a3b8;
+								padding: 0 8px;
+								border-radius: 8px;
+								margin-bottom: 4px;
+								background: #ffffff;
+							">
+							<td style="width: 20%">
+								<p class="m-0 label">FIRMA</p>
+							</td>
+							<td
+								style="
+									width: 80%;
+									border-left: solid 1px #64748b;
+									height: 16px;
+								"></td>
+						</tr>
+					</tbody>
+				</table>
+				<table style="width: 49%">
+					<tbody class="w-full">
+						<tr
+							class="flex items-center justify-center"
+							style="
+								border: solid 1px #94a3b8;
+								padding: 0 8px;
+								border-radius: 8px;
+								margin-bottom: 4px;
+								background: #ffffff;
+							">
+							<td style="width: 20%">
+								<p class="m-0 label">INSPECTOR SST</p>
+							</td>
+							<td
+								style="
+									width: 80%;
+									border-left: solid 1px #64748b;
+									height: 16px;
+								"></td>
+						</tr>
+						<tr
+							class="flex items-center justify-center"
+							style="
+								border: solid 1px #94a3b8;
+								padding: 0 8px;
+								border-radius: 8px;
+								margin-bottom: 4px;
+								background: #ffffff;
+							">
+							<td style="width: 20%">
+								<p class="m-0 label">CORREO SST CONTRATISTA</p>
+							</td>
+							<td
+								style="
+									width: 80%;
+									border-left: solid 1px #64748b;
+									height: 16px;
+								"></td>
+						</tr>
+						<tr
+							class="flex items-center justify-center"
+							style="
+								border: solid 1px #94a3b8;
+								padding: 0 8px;
+								border-radius: 8px;
+								margin-bottom: 4px;
+								background: #ffffff;
+							">
+							<td style="width: 20%">
+								<p class="m-0 label">FIRMA</p>
+							</td>
+							<td
+								style="
+									width: 80%;
+									border-left: solid 1px #64748b;
+									height: 16px;
+								"></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<!-- RESPONSABLE DE EVALUACIÓN Y AUTORIZACIÓN AR -->
+		<div style="border-radius: 8px; margin-top: 0">
+			<div class="flex flex-between">
+				<div style="width: 49%; background: #ffffff">
+					<table class="w-full">
+						<tbody class="w-full">
+							<tr>
+								<td>
+									<p
+										class="label m-0"
+										style="color: #d80915; padding: 0 8px">
+										RESPONSABLE DE EVALUACIÓN Y AUTORIZACIÓN
+										AR
+									</p>
+								</td>
+							</tr>
+							<tr
+								class="flex items-center justify-center"
+								style="
+									border: solid 1px #94a3b8;
+									padding: 0 8px;
+									border-radius: 8px;
+									margin-bottom: 4px;
+									background: #ffffff;
+								">
+								<td style="width: 15%">
+									<p class="m-0 label">NOMBRE</p>
+								</td>
+								<td
+									style="
+										width: 85%;
+										border-left: solid 1px #64748b;
+										height: 8px;
+									"></td>
+							</tr>
+							<tr
+								class="flex items-center justify-center"
+								style="
+									border: solid 1px #94a3b8;
+									padding: 0 8px;
+									border-radius: 8px;
+									margin-bottom: 4px;
+									background: #ffffff;
+								">
+								<td style="width: 15%">
+									<p class="m-0 label">CARGO</p>
+								</td>
+								<td
+									style="
+										width: 85%;
+										border-left: solid 1px #64748b;
+										height: 8px;
+									"></td>
+							</tr>
+							<tr
+								class="flex items-center justify-center"
+								style="
+									border: solid 1px #94a3b8;
+									padding: 0 8px;
+									border-radius: 8px;
+									margin-bottom: 4px;
+									background: #ffffff;
+								">
+								<td style="width: 15%">
+									<p class="m-0 label">CORREO</p>
+								</td>
+								<td
+									style="
+										width: 85%;
+										border-left: solid 1px #64748b;
+										height: 8px;
+									"></td>
+							</tr>
+							<tr
+								class="flex items-center justify-center"
+								style="
+									border: solid 1px #94a3b8;
+									padding: 0 8px;
+									border-radius: 8px;
+									margin-bottom: 4px;
+									background: #ffffff;
+								">
+								<td style="width: 40%">
+									<p class="m-0 label">
+										AUTORIZA LA ACTIVIDAD:
+									</p>
+								</td>
+								<td
+									class="flex justify-start"
+									style="width: 60%; height: 16px">
+									<div
+										style="width: 20%; padding-bottom: 4px"
+										class="flex items-center">
+										<label class="container">
+											<input type="checkbox" />
+											<span class="checkmark"></span>
+										</label>
+										<p class="m-0 label">SI</p>
+									</div>
+									<div
+										style="width: 20%; padding-bottom: 4px"
+										class="flex items-center">
+										<label class="container">
+											<input type="checkbox" />
+											<span class="checkmark"></span>
+										</label>
+										<p class="m-0 label">NO</p>
+									</div>
+								</td>
+							</tr>
+							<tr
+								class="flex items-center justify-center"
+								style="
+									border: solid 1px #94a3b8;
+									padding: 0 8px;
+									border-radius: 8px;
+									margin-bottom: 4px;
+									background: #ffffff;
+								">
+								<td style="width: 15%">
+									<p class="m-0 label">firma:</p>
+								</td>
+								<td
+									style="
+										width: 85%;
+										border-left: solid 1px #64748b;
+										height: 8px;
+									"></td>
+							</tr>
+
+							<tr
+								class="flex items-center justify-center"
+								style="
+									border: solid 1px #94a3b8;
+									padding: 0 8px;
+									border-radius: 8px;
+									margin-bottom: 4px;
+									background: #ffffff;
+								">
+								<td
+									class="flex items-center"
+									style="width: 25%; height: 25px">
+									<p class="m-0 label">Contratista 1</p>
+								</td>
+								<td
+									class="flex justify-start items-center"
+									style="width: 75%; height: 25px">
+									<div
+										style="width: 50%; padding-bottom: 4px">
+										<p class="m-0">Hora inicial:</p>
+									</div>
+									<div
+										style="width: 50%; padding-bottom: 4px">
+										<p class="m-0">Hora final:</p>
+									</div>
+								</td>
+							</tr>
+
+							<tr
+								class="flex items-center justify-center"
+								style="
+									border: solid 1px #94a3b8;
+									padding: 0 8px;
+									border-radius: 8px;
+									margin-bottom: 4px;
+									background: #ffffff;
+								">
+								<td
+									class="flex items-center"
+									style="width: 25%; height: 25px">
+									<p class="m-0 label">Contratista 2</p>
+								</td>
+								<td
+									class="flex justify-start items-center"
+									style="width: 75%; height: 25px">
+									<div
+										style="width: 50%; padding-bottom: 4px">
+										<p class="m-0">Hora inicial:</p>
+									</div>
+									<div
+										style="width: 50%; padding-bottom: 4px">
+										<p class="m-0">Hora final:</p>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<!--segunda columna-->
+
+				<div style="width: 49%; background: #ffffff">
+					<table class="w-full">
+						<tbody class="w-full">
+							<tr>
+								<td>
+									<p
+										class="label m-0"
+										style="color: #d80915; padding: 0 8px">
+										INSPECTOR DE SEGURIDAD Y SALUD EN EL
+										TRABAJO AR
+									</p>
+								</td>
+							</tr>
+							<tr
+								class="flex items-center justify-center"
+								style="
+									border: solid 1px #94a3b8;
+									padding: 0 8px;
+									border-radius: 8px;
+									margin-bottom: 4px;
+									background: #ffffff;
+								">
+								<td style="width: 15%">
+									<p class="m-0 label">NOMBRE</p>
+								</td>
+								<td
+									style="
+										width: 85%;
+										border-left: solid 1px #64748b;
+										height: 8px;
+									"></td>
+							</tr>
+							<tr
+								class="flex items-center justify-center"
+								style="
+									border: solid 1px #94a3b8;
+									padding: 0 8px;
+									border-radius: 8px;
+									margin-bottom: 4px;
+									background: #ffffff;
+								">
+								<td style="width: 15%">
+									<p class="m-0 label">CARGO</p>
+								</td>
+								<td
+									style="
+										width: 85%;
+										border-left: solid 1px #64748b;
+										height: 8px;
+									"></td>
+							</tr>
+							<tr
+								class="flex items-center justify-center"
+								style="
+									border: solid 1px #94a3b8;
+									padding: 0 8px;
+									border-radius: 8px;
+									margin-bottom: 4px;
+									background: #ffffff;
+								">
+								<td style="width: 15%">
+									<p class="m-0 label">CORREO</p>
+								</td>
+								<td
+									style="
+										width: 85%;
+										border-left: solid 1px #64748b;
+										height: 8px;
+									"></td>
+							</tr>
+							<tr
+								class="flex items-center justify-center"
+								style="
+									border: solid 1px #94a3b8;
+									padding: 0 8px;
+									border-radius: 8px;
+									margin-bottom: 4px;
+									background: #ffffff;
+								">
+								<td style="width: 40%">
+									<p class="m-0 label">
+										AUTORIZA LA ACTIVIDAD:
+									</p>
+								</td>
+								<td
+									class="flex justify-start"
+									style="width: 60%; height: 16px">
+									<div
+										style="width: 20%; padding-bottom: 4px"
+										class="flex items-center">
+										<label class="container">
+											<input type="checkbox" />
+											<span class="checkmark"></span>
+										</label>
+										<p class="m-0 label">SI</p>
+									</div>
+									<div
+										style="width: 20%; padding-bottom: 4px"
+										class="flex items-center">
+										<label class="container">
+											<input type="checkbox" />
+											<span class="checkmark"></span>
+										</label>
+										<p class="m-0 label">NO</p>
+									</div>
+								</td>
+							</tr>
+							<tr
+								class="flex items-center justify-center"
+								style="
+									border: solid 1px #94a3b8;
+									padding: 0 8px;
+									border-radius: 8px;
+									margin-bottom: 4px;
+									background: #ffffff;
+								">
+								<td style="width: 15%">
+									<p class="m-0 label">firma:</p>
+								</td>
+								<td
+									style="
+										width: 85%;
+										border-left: solid 1px #64748b;
+										height: 8px;
+									"></td>
+							</tr>
+
+							<tr
+								class="flex items-center justify-center"
+								style="
+									border: solid 1px #94a3b8;
+									padding: 0 8px;
+									border-radius: 8px;
+									margin-bottom: 4px;
+									background: #ffffff;
+								">
+								<td
+									class="flex items-center"
+									style="width: 25%; height: 25px">
+									<p class="m-0 label">Contratista 1</p>
+								</td>
+								<td
+									class="flex justify-start items-center"
+									style="width: 75%; height: 25px">
+									<div
+										style="width: 50%; padding-bottom: 4px">
+										<p class="m-0">Hora inicial:</p>
+									</div>
+									<div
+										style="width: 50%; padding-bottom: 4px">
+										<p class="m-0">Hora final:</p>
+									</div>
+								</td>
+							</tr>
+
+							<tr
+								class="flex items-center justify-center"
+								style="
+									border: solid 1px #94a3b8;
+									padding: 0 8px;
+									border-radius: 8px;
+									margin-bottom: 4px;
+									background: #ffffff;
+								">
+								<td
+									class="flex items-center"
+									style="width: 25%; height: 25px">
+									<p class="m-0 label">Contratista 2</p>
+								</td>
+								<td
+									class="flex justify-start items-center"
+									style="width: 75%; height: 25px">
+									<div
+										style="width: 50%; padding-bottom: 4px">
+										<p class="m-0">Hora inicial:</p>
+									</div>
+									<div
+										style="width: 50%; padding-bottom: 4px">
+										<p class="m-0">Hora final:</p>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
