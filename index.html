@@ -54,61 +54,6 @@
 			p {
 				font-size: 9px;
 			}
-			.container {
-				width: 15px;
-				height: 15px;
-				margin-right: 5px;
-				display: inline-block;
-				position: relative;
-				cursor: pointer;
-				font-size: 16px;
-				-webkit-user-select: none;
-				-moz-user-select: none;
-				-ms-user-select: none;
-				user-select: none;
-			}
-			.container input {
-				position: absolute;
-				opacity: 0;
-				cursor: pointer;
-				height: 0;
-				width: 0;
-			}
-			.checkmark {
-				position: absolute;
-				top: 0;
-				left: 0;
-				height: 15px;
-				width: 15px;
-				border-radius: 4px;
-				background-color: #e2e8f0;
-				border: solid 1px #64748b;
-			}
-			.container:hover input ~ .checkmark {
-				background-color: #ccc;
-			}
-			.container input:checked ~ .checkmark {
-				background-color: #d80915;
-			}
-			.checkmark:after {
-				content: '';
-				position: absolute;
-				display: none;
-			}
-			.container input:checked ~ .checkmark:after {
-				display: block;
-			}
-			.container .checkmark:after {
-				left: 4px;
-				top: 1px;
-				width: 3px;
-				height: 8px;
-				border: solid white;
-				border-width: 0 3px 3px 0;
-				-webkit-transform: rotate(45deg);
-				-ms-transform: rotate(45deg);
-				transform: rotate(45deg);
-			}
 		</style>
 	</head>
 	<body style="padding: 0">
@@ -131,11 +76,15 @@
 		</div>
 		<div class="w-full">
 			<p
-				class="label text-center"
-				style="margin-bottom: 0; padding-left: 12px; color: #d80915">
-				Datos de registro contratista 1
+				class="label"
+				style="margin-bottom: 0; padding-left: 12px">
+				Datos de registro
 			</p>
 		</div>
+		<table
+			style="border-collapse: collapse; width: 100%"
+			border="0"
+			class="flex items-center"></table>
 		<div
 			class="flex flex-center items-center"
 			style="padding: 0">
@@ -212,7 +161,7 @@
 		<!-- INICIAN DATOS DEL CONTRATISTA 1 -->
 		<div style="border-radius: 8px; margin-top: 0">
 			<table class="w-full">
-				<!-- <thead>
+				<thead>
 					<tr>
 						<td colspan="2">
 							<p
@@ -222,7 +171,7 @@
 							</p>
 						</td>
 					</tr>
-				</thead> -->
+				</thead>
 				<tbody class="w-full">
 					<tr
 						class="flex items-center justify-center"
@@ -1434,91 +1383,9 @@
 		</div>
 
 		<!-- INICIAN DATOS DEL CONTRATISTA 2 -->
-		<div
-			class="w-full"
-			style="margin-top: 150px">
-			<p
-				class="label text-center"
-				style="margin-bottom: 0; padding-left: 12px; color: #d80915">
-				Datos de registro contratista 2
-			</p>
-		</div>
-		<div
-			class="flex flex-center items-center"
-			style="padding: 0">
-			<table
-				class="border"
-				style="width: 33.33%">
-				<tbody>
-					<tr
-						class="flex items-center justify-center"
-						style="
-							border: solid 1px #94a3b8;
-							padding: 0 8px;
-							border-radius: 8px;
-						">
-						<td style="width: 15%">
-							<p class="m-0 label">Obra:</p>
-						</td>
-						<td
-							style="
-								width: 85%;
-								border-left: solid 1px #64748b;
-								height: 16px;
-							"></td>
-					</tr>
-				</tbody>
-			</table>
-			<table
-				class="border"
-				style="width: 33.33%">
-				<tbody>
-					<tr
-						class="flex items-center justify-center"
-						style="
-							border: solid 1px #94a3b8;
-							padding: 0 8px;
-							border-radius: 8px;
-						">
-						<td style="width: 15%">
-							<p class="m-0 label">Fecha:</p>
-						</td>
-						<td
-							style="
-								width: 85%;
-								border-left: solid 1px #64748b;
-								height: 16px;
-							"></td>
-					</tr>
-				</tbody>
-			</table>
-			<table
-				class="border"
-				style="width: 33.33%">
-				<tbody>
-					<tr
-						class="flex items-center justify-center"
-						style="
-							border: solid 1px #94a3b8;
-							padding: 0 8px;
-							border-radius: 8px;
-						">
-						<td style="width: 15%">
-							<p class="m-0 label">Hora:</p>
-						</td>
-						<td
-							style="
-								width: 85%;
-								border-left: solid 1px #64748b;
-								height: 16px;
-							"></td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-		<div style="border-radius: 8px">
+		<div style="border-radius: 8px; margin-top: 150px">
 			<table class="w-full">
-				<!-- <thead>
+				<thead>
 					<tr>
 						<td colspan="2">
 							<p
@@ -1528,7 +1395,7 @@
 							</p>
 						</td>
 					</tr>
-				</thead> -->
+				</thead>
 				<tbody class="w-full">
 					<tr
 						class="flex items-center justify-center"
